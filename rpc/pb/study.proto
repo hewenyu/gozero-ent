@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pb;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./pb";
+
+
+// 空数据
+message Empty {}
+
+// 空数据返回
+message EmptyReply {}
+
+
+service study {
+    rpc initDatabase (Empty) returns (EmptyReply); // 初始化数据库
+}

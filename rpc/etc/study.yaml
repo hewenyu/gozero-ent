@@ -1,0 +1,5 @@
+Name: study.rpc
+ListenOn: 0.0.0.0:8080
+Mode: dev
+Mysql:
+  DataSource: root:123456@tcp(localhost:3306)/hello?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
